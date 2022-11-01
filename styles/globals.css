@@ -15,6 +15,25 @@ a {
   box-sizing: border-box;
 }
 
+.resource-form{
+  margin-top: 50px;
+}
+
+.active-resource{
+background-color: #3140aa;
+padding: 25px;
+text-align: center;
+color: #ffffff
+}
+.active-resource .resource-name{
+  font-size: 30px;
+}
+
+.active-resource .elapsed-time{
+  font-size: 64px;
+  font-weight: bold;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
