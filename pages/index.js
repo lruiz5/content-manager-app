@@ -21,7 +21,7 @@ function Home(props) {
 //function is executed on the server
 //data is always fresh
 export async function getServerSideProps() {
-  const resData = await fetch("http://localhost:3001/api/resources");
+  const resData = await fetch(`${process.env.HOST_URL}/api/resources`);
 
   const data = await resData.json();
 
@@ -34,7 +34,7 @@ export async function getServerSideProps() {
 
 //called at build time, called only once.
 /* export async function getStaticProps() {
-  const resData = await fetch("http://localhost:3000/api/resources");
+  const resData = await fetch(`${process.env.HOST_URL}/api/resources`);
 
   const data = await resData.json();
 

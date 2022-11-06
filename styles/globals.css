@@ -23,17 +23,33 @@ a {
 background-color: #3140aa;
 padding: 25px;
 text-align: center;
-color: #ffffff
+color: #ffffff;
+height: 300px;
 }
 .active-resource .resource-name{
   font-size: 30px;
+  height: 50px;
 }
 
 .active-resource .elapsed-time{
   font-size: 64px;
   font-weight: bold;
+  
 }
-
+.active-resource .time-wrapper{
+  height: 100px;
+}
+.tag.resource-complete{
+background-color: gold ;
+}
+.tag.resource-inactive{
+  background-color: #2d8bff;
+  color: #ffffff;
+}
+.tag.resource-active{
+  background-color: #0fd60f ;
+  color: #ffffff;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
